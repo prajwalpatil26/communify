@@ -1,0 +1,17 @@
+{
+  "name": "communify-monorepo",
+  "version": "1.0.0",
+  "description": "Communify - A high-performance real-time networking & intelligence matrix for innovators",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "dev": "npx concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "start:server": "npm run start --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "seed": "node server/seed.js",
+    "seed:massive": "node server/seedMassive.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
