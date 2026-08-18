@@ -76,7 +76,7 @@ Create a file named `.env` in the `server/` directory and populate it with the f
 ```env
 PORT=5000
 MONGODB_URI=mongodb://localhost:27017/communify
-JWT_SECRET=communify_secret_key_2026_futuristic
+JWT_SECRET=<your-secret>
 NODE_ENV=development
 ```
 
